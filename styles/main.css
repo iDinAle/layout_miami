@@ -17,7 +17,7 @@ textarea {
   line-height: 1.5; }
 
 .header {
-  height: 765px;
+  height: 100vh;
   background-image: url(../images/header.jpg);
   background-position: center;
   background-size: cover;
@@ -42,7 +42,15 @@ textarea {
   .header__logo, .header__phone {
     margin-bottom: 10px; }
   .header__phone {
-    font-size: 16px; }
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    -webkit-transition: color 0.5s, border-color 0.5s;
+    transition: color 0.5s, border-color 0.5s; }
+    .header__phone:hover {
+      color: #d5c5aa;
+      border-color: #d5c5aa;
+      cursor: pointer; }
   .header__call-link {
     color: white;
     font-size: 16px;
@@ -602,11 +610,8 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 16px; }
-  .contacts__info {
-    padding-left: calc(50% - 111px);
-    -ms-flex-item-align: start;
-        align-self: flex-start; }
+  font-size: 16px;
+  text-align: center; }
   .contacts__email, .contacts__phone {
     display: block;
     text-decoration: none;
